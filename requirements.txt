@@ -7,6 +7,6 @@ pytest
 setuptools
 wheel
 twine
-sphinxcontrib-napoleon
+sphinx.ext.napoleon
 sphinx
 m2r
