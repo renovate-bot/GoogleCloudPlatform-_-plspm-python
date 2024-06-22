@@ -20,13 +20,13 @@ sys.path.insert(0, os.path.abspath('../'))
 # -- Project information -----------------------------------------------------
 
 project = 'plspm'
-copyright = '2019, Google LLC'
+copyright = '2019-2024, Google LLC'
 author = 'Jez Humble'
 
 # The short X.Y version
 version = ''
 # The full version, including alpha/beta/rc tags
-release = '0.4'
+release = '0.5.7'
 
 autodoc_default_options = {
     'special-members': '__init__'
@@ -66,7 +66,7 @@ master_doc = 'index'
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -183,7 +183,7 @@ epub_exclude_files = ['search.html']
 
 # -- Extension configuration -------------------------------------------------
 extensions = [
-    'sphinxcontrib.napoleon',
+    'sphinx.ext.napoleon',
     'm2r'
 ]
 
