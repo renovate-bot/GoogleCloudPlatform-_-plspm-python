@@ -1,3 +1,2 @@
-sphinx.ext.napoleon
 sphinx
 m2r
