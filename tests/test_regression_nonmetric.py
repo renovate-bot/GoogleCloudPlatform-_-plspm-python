@@ -121,9 +121,9 @@ def test_plspm_russa_categorical_mode_b():
 
 def test_plspm_russa_missing_data():
     russa = pd.read_csv("file:tests/data/russa.csv", index_col=0)
-    russa.iloc[0, 0] = np.NaN
-    russa.iloc[3, 3] = np.NaN
-    russa.iloc[5, 5] = np.NaN
+    russa.iloc[0, 0] = np.nan
+    russa.iloc[3, 3] = np.nan
+    russa.iloc[5, 5] = np.nan
     config = c.Config(russa_path_matrix(), default_scale=Scale.NUM)
     config.add_lv("AGRI", Mode.A, c.MV("gini"), c.MV("farm"), c.MV("rent"))
     config.add_lv("IND", Mode.A, c.MV("gnpr"), c.MV("labo"))
